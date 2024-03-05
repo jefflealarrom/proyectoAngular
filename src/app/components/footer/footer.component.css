@@ -2,24 +2,40 @@ hr {
     margin: 0;
     padding: 0;
 }
+
 section {
-    height: 10vh;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
 }
 
-.red, .black, .green {
-    min-width: 33.33%; 
+.footer {
+    max-width: 48rem;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.red {
-    background-color: red;
+h2 {
+    margin-bottom: 1rem;
 }
 
-.black {
-    background-color: black;
+
+.RRSS {
+    display: flex; 
+    justify-content: center;
+    cursor: pointer;
 }
 
-.green {
-    background-color: green;
+i {
+    font-size: 3rem;
+    margin: 1rem;
+    color:black 
 }
+
+
+
