@@ -5,12 +5,14 @@
 <section class="formulario">
 
   <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-    
+
+    <i class="bi bi-backspace" (click)="close()"></i>
+
     <div class="form-group">
 
       <label for="titulo"></label>
       <input type="text" formControlName="titulo" placeholder="Titulo">
-      
+
       <div *ngIf="formulario.get('titulo')?.invalid && formulario.get('titulo')?.touched">
         El titulo es requerido
       </div>
@@ -19,7 +21,7 @@
 
 
     <div class="form-group">
-      
+
       <label for="descripcion"></label>
       <textarea formControlName="descripcion" placeholder="Escribe tu Post"></textarea>
 
@@ -28,8 +30,8 @@
       </div>
 
     </div>
-    
-    
+
+
     <div class="form-group">
 
       <label for="autor"></label>
@@ -53,7 +55,6 @@
     </div>
 
     <button type="submit" [disabled]="!formulario.valid">Enviar</button>
-    <i class="bi bi-backspace" (click)="close()"></i>
 
   </form>
 

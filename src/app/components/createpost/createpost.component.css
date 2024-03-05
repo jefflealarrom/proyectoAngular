@@ -1,39 +1,38 @@
 .title {
-height: 10vh;
-width: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 2rem;
-text-transform: capitalize;
-
-
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
 }
+
 .formulario {
     height: 70vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  
 }
 
 form {
-    border: 1px solid black; 
+    border: 1px solid black;
     padding: 2rem;
     border-radius: 50px 0;
-   
 }
 
-input, textarea {
+input,
+textarea {
     width: 60vw;
     height: 3vh;
     position: relative;
     margin-bottom: 2rem;
-   }
+}
 
 textarea {
     height: 10vw;
 }
 
+i {
+    float: right;
+}
