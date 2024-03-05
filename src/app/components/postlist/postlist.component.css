@@ -50,11 +50,12 @@ strong {
 
 a {
     text-decoration: none;
-    color: grey; 
-    border: 1px solid grey;
-    padding: 0.4rem;
-    border-radius: 25px;
-    float: right;
+    color: black; 
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    border-radius: 50px 0;
+    
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
