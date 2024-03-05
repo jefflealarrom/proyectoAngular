@@ -1,6 +1,6 @@
 <section *ngIf="post">
   <div>
-    <button (click)="close()">X</button>
+    <i class="bi bi-backspace" (click)="close()"></i>
     <h2>{{ post.title }}</h2>
     <p>{{ post.text }}</p>
     <p><strong>Author:</strong> {{ post.author }}</p>

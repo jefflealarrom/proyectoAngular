@@ -75,12 +75,8 @@
     }
 
       
-  .x {
+  .bi {
     float: right;
-    background-color: transparent;
-    border: none;
-    font-family: inherit;
-    font-size: 25px;
     cursor: pointer;
   
 }
