@@ -12,7 +12,7 @@
   
   h2 {
       text-align: center;
-      padding-bottom: 40px;
+      padding-bottom: 2rem;
   }
   
   .formularios {
@@ -32,10 +32,9 @@
     
     .form-group {
       position: relative;
-      margin-bottom: 40px;
+      margin-bottom: 2rem;
     }
     
-    input[type="text"],
     input[type="email"],
     input[type="password"] {
       width: 100%;
@@ -52,7 +51,6 @@
     }
     
     .small {
-      padding: 5px;
       position: absolute;
     }
     
