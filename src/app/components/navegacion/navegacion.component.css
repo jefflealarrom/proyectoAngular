@@ -9,7 +9,6 @@ section {
 img {
     height: 8vh;
     cursor: pointer;
-    /* background-color: black; */
 }
 
 
@@ -91,7 +90,7 @@ hr {
     .list {
         display: none;
         width: 90%;
-        height: 40%; 
+        height: 45%; 
     }
 
     .open .list {
