@@ -59,6 +59,14 @@ hr {
         padding-top: 5rem;
         flex-direction: column;
     }
+
+    li a {
+        background-color: transparent;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+
     .hamburger {
         display: block;
         background: none;
@@ -89,8 +97,8 @@ hr {
 
     .list {
         display: none;
-        width: 90%;
-        height: 45%; 
+        width: 70%;
+        height: 35%;
     }
 
     .open .list {
@@ -98,19 +106,17 @@ hr {
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 50px;
         position: absolute;
-        top: 8rem; 
+        top: 8rem;
         z-index: 999;
     }
+
     .log {
-        color: black;
-        background-color: whitesmoke;
-        text-decoration: none;
-        font-size: 32px; 
-        transition: color 0.3s ease; 
+        font-size: 15px;
+        transition: color 0.3s ease;
     }
 
     .list a:hover {
-        color: white; 
+        color: white;
         background-color: black;
     }
 }
