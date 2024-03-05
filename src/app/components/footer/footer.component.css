@@ -1,0 +1,25 @@
+hr {
+    margin: 0;
+    padding: 0;
+}
+section {
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.red, .black, .green {
+    min-width: 33.33%; 
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: green;
+}

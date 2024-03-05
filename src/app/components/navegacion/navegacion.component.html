@@ -1,0 +1,26 @@
+<header>
+    <section>
+        <figure>
+            <a [routerLink]="['/inicio']">
+                <img src="https://www.shutterstock.com/image-vector/user-profile-login-icon-vector-600nw-2311962735.jpg"
+                    alt="login">
+            </a>
+            <figcaption></figcaption>
+        </figure>
+
+        <div class="list">
+            <ul>
+                <li><a class="log" [routerLink]="['/blog']">Blog</a></li>
+                <li><a class="log" [routerLink]="['/CreatePost']">Create a Post</a></li>
+                <li><a class="log" [routerLink]="['/login']">Login</a></li>
+                <li><a class="log" [routerLink]="['/registre']">SignUp</a></li>
+            </ul>
+        </div>
+
+
+    </section>
+    <hr>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>

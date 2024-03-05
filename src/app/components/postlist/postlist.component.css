@@ -1,0 +1,61 @@
+@keyframes backgroundAnimation {
+    0% {
+        background-color: magenta;
+    }
+
+    50% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: chartreuse;
+    }
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    animation: backgroundAnimation 5s linear infinite alternate;
+}
+
+div {
+    max-width: 400px;
+    max-height: 400px;
+    padding: 20px;
+    margin: 4rem;
+    background-color: rgba(255, 255, 255, 0.3);border-radius: 50px 0;
+    border: 1px solid black;
+}
+
+p {
+    margin-bottom: 10px; 
+}
+
+h2 {
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+strong {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: grey; 
+    border: 1px solid grey;
+    padding: 0.4rem;
+    border-radius: 25px;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        justify-content: center;
+    }
+
+    div {
+        margin: 2rem;
+    }
+}

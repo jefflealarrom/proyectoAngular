@@ -1,0 +1,60 @@
+<section class="title">
+  <h2>crear nuevo post</h2>
+</section>
+
+<section class="formulario">
+
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    
+    <div class="form-group">
+
+      <label for="titulo"></label>
+      <input type="text" formControlName="titulo" placeholder="Titulo">
+      
+      <div *ngIf="formulario.get('titulo')?.invalid && formulario.get('titulo')?.touched">
+        El titulo es requerido
+      </div>
+
+    </div>
+
+
+    <div class="form-group">
+      
+      <label for="descripcion"></label>
+      <textarea formControlName="descripcion" placeholder="Escribe tu Post"></textarea>
+
+      <div *ngIf="formulario.get('descripcion')?.invalid && formulario.get('descripcion')?.touched">
+        La descripción tiene que tener un minimo de 10 caracteres
+      </div>
+
+    </div>
+    
+    
+    <div class="form-group">
+
+      <label for="autor"></label>
+      <input type="text" formControlName="autor" placeholder="Autor">
+
+      <div *ngIf="formulario.get('autor')?.invalid && formulario.get('autor')?.touched">
+        El autor es requerido
+      </div>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="fecha"></label>
+      <input type="date" formControlName="fecha">
+
+      <div *ngIf="formulario.get('fecha')?.invalid && formulario.get('fecha')?.touched">
+        Se requiere una fecha de publicación
+      </div>
+
+    </div>
+
+    <button type="submit" [disabled]="!formulario.valid">Enviar</button>
+    <button type="button" class="btn btn-secondary" (click)="close()">X</button>
+
+  </form>
+
+</section>

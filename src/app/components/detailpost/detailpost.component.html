@@ -1,0 +1,10 @@
+<section *ngIf="post">
+  <div>
+    <button (click)="close()">X</button>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text }}</p>
+    <p><strong>Author:</strong> {{ post.author }}</p>
+    <p><strong>Publish Date:</strong> {{ post.publishDate }}</p>
+  </div>
+  </section>
+  
